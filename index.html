@@ -226,7 +226,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Qualitative results</h2>
+      <h2 class="title is-3">Qualitative results (videos)</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
@@ -305,7 +305,45 @@
 <!-- End video carousel -->
 
 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Qualitative results (sampled frames)</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <!-- Images will be added here dynamically -->
+      </div>
+    </div>
+  </div>
+</section>
 
+<script>
+  // Define the directory where images are stored
+  const imageDir = "static/images/qualitative";
+  
+  // List of image filenames (ideally, this could be fetched dynamically from the server)
+  const images = ["-icHOADpuEc_0.png","08TSVT75_kU_1.png","0nAywzNY1tQ_0.png","2uvlnrx45BY_0.png","59FNb2uuGPc_0.png","9_qVPTMSrO0_1.png","AwfTXuu74os_0.png","B5Z6nfa4Sp8_0.png","H1JC0VVtJO0_0.png","H9l4GRkKO_8_0.png","I19xrxkgrNo_0.png","KCMAg-eRaI8_0.png","QTki6A-OT4g_0.png","TysPfOire9w_0.png","UqmZEcChqs0_1.png","V0v8OCO6sUE_1.png","Z-p4dMJUpUw_1.png","bOzQb8-xIEk_1.png","bdSoz_UOMrE_1.png","iJv990FT7-s_1.png","l3DTm0sciDs_0.png","lM6IyP-MseE_0.png","sux8qdPxkNs_0.png","w6IYgqKyaWk_1.png"];
+
+  // Get the carousel container
+  const carousel = document.getElementById("results-carousel");
+
+  // Loop through images and dynamically add them to the carousel
+  images.forEach((image) => {
+    const item = document.createElement("div");
+    item.className = "item";
+    
+    const img = document.createElement("img");
+    img.src = imageDir + image;
+    img.alt = "MY ALT TEXT";
+
+    const subtitle = document.createElement("h2");
+    subtitle.className = "subtitle has-text-centered";
+    subtitle.textContent = image.replace(/_/g, " ").replace(/\.\w+$/, ""); // Format filename as title
+
+    item.appendChild(img);
+    item.appendChild(subtitle);
+    carousel.appendChild(item);
+  });
+</script>
 
 
 
