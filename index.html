@@ -22,6 +22,7 @@
   <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 
 
   <title>Large-scale Pre-training for Grounded Video Caption Generation</title>
@@ -198,7 +199,126 @@
 </section>
 <!-- End image carousel -->
 
+<!-- ====================== -->
+<!-- Poster Section -->
+<!-- ====================== -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h2 class="title is-3">Poster</h2>
+      <iframe
+        src="static/pdfs/iccv25_poster_kazakos.pdf"
+        width="100%"
+        height="700"
+        style="border:0; border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,0.15);">
+      </iframe>
 
+      <p class="mt-4">
+        <a href="static/pdfs/ICCV2025_poster.pdf" target="_blank"
+           class="button is-dark is-rounded is-medium">
+          <span class="icon"><i class="fas fa-file-pdf"></i></span>
+          <span>Download Poster (PDF)</span>
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+<!-- ====================== -->
+<!-- End Poster Section -->
+
+<!-- ====================== -->
+<!-- Video Presentation Section -->
+<!-- ====================== -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="publication-video" style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,0.15);">
+            <iframe 
+              style="position:absolute; top:0; left:0; width:100%; height:100%;"
+              src="https://www.youtube-nocookie.com/embed/WnkNjSJxDRQ" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <p class="subtitle is-5 mt-4">
+            5-minute video presentation prepared for ICCV 2025.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ====================== -->
+<!-- End Video Presentation Section -->
+<!-- ====================== -->
+
+<!-- ====================== -->
+<!-- Datasets Section -->
+<!-- ====================== -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="has-text-centered">
+      <h2 class="title is-3">Datasets</h2>
+      <p class="subtitle is-5">
+        We introduce two datasets for large-scale grounded video caption generation.
+      </p>
+    </div>
+
+    <div class="columns is-vcentered mt-6" style="position: relative;">
+
+      <!-- Center vertical divider -->
+      <div style="position:absolute; top:0; bottom:0; left:50%; width:1px; background-color:#e0e0e0; transform:translateX(-50%);"></div>
+
+      <!-- HowToGround1M -->
+      <div class="column pr-6">
+        <h3 class="title is-4 has-text-centered">HowToGround1M</h3>
+        <div class="has-text-centered">
+          <img src="static/images/howtoground1m_examples.png" alt="HowToGround1M examples" style="width:100%; height:auto; border-radius:10px; margin-bottom:1em;">
+          <img src="static/images/wordcloud_howtoground1m.pdf" alt="HowToGround1M wordcloud" style="width:100%; height:auto; border-radius:10px;">
+        </div>
+        <ul class="is-size-5 mt-4" style="list-style-type: disc; margin-left: 1.5em;">
+          <li>Automatically annotated</li>
+          <li><strong>1M videos</strong></li>
+          <li><strong>80.1M bounding boxes</strong></li>
+          <li>Suitable for pre-training</li>
+        </ul>
+      </div>
+
+      <!-- iGround -->
+      <div class="column pl-6">
+        <h3 class="title is-4 has-text-centered">iGround</h3>
+        <div class="has-text-centered">
+          <img src="static/images/iground_examples.png" alt="iGround examples" style="width:100%; height:auto; border-radius:10px; margin-bottom:1em;">
+          <img src="static/images/wordcloud_iground.pdf" alt="iGround wordcloud" style="width:100%; height:auto; border-radius:10px;">
+        </div>
+        <ul class="is-size-5 mt-4" style="list-style-type: disc; margin-left: 1.5em;">
+          <li>Manually annotated</li>
+          <li><strong>3500 examples</strong></li>
+          <li>Train/val/test: <strong>2000/500/1000</strong></li>
+          <li>Suitable for fine-tuning and evaluation</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Single centered button -->
+    <div class="has-text-centered mt-6">
+      <a href="https://github.com/ekazakos/grove?tab=readme-ov-file#data-preparation" target="_blank"
+        class="button is-rounded is-dark is-medium">
+        <span class="icon"><i class="fas fa-download"></i></span>
+        <span>Download Datasets</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+<!-- ====================== -->
+<!-- End Datasets Section -->
+<!-- ====================== -->
 
 
 <!-- Youtube video -->
@@ -378,7 +498,7 @@
       <pre><code>@article{kazakos2025grove,
         title={Large-scale Pre-training for Grounded Video Caption Generation},
         author={Evangelos Kazakos and Cordelia Schmid and Josef Sivic},
-        journal={arXiv preprint arXiv:2503.10781},
+        journal={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
         year={2025}}
       </code></pre>
     </div>
