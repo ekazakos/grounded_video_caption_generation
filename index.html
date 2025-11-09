@@ -63,7 +63,7 @@
                   <span class="author-block">
                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Josef Sivic</a><sup>1</sup>,
                   </span>
-                  </div>
+            </div>
 
                   <div class="is-size-5 publication-authors">
                     <span class="author-block"><sup>1</sup>Czech Institute of Informatics, Robotics and Cybernetics at the Czech Technical University in Prague<br><sup>2</sup>Inria, École normale supérieure, CNRS, PSL Research University</span>
@@ -73,50 +73,55 @@
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Kazakos_Large-scale_Pre-training_for_Grounded_Video_Caption_Generation_ICCV_2025_paper.html" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-globe"></i>
-                        </span>
-                        <span>ICCV 2025 (CVF)</span>
-                      </a>
-                    </span>
+                      <!-- First row -->
+                      <div class="buttons is-centered mb-3">
+                        <!-- ICCV / CVF -->
+                        <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Kazakos_Large-scale_Pre-training_for_Grounded_Video_Caption_Generation_ICCV_2025_paper.html"
+                          target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon"><i class="fas fa-globe"></i></span>
+                          <span>ICCV 2025 (CVF)</span>
+                        </a>
 
-                    <!-- Supplementary PDF link -->
-<!--                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span> -->
+                        <!-- Code, datasets & checkpoints -->
+                        <a href="https://github.com/ekazakos/grove" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon"><i class="fab fa-github"></i></span>
+                          <span>Code, Datasets &amp; Checkpoints</span>
+                        </a>
 
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/ekazakos/grove" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
+                        <!-- arXiv -->
+                        <a href="https://arxiv.org/abs/2503.10781" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon"><i class="ai ai-arxiv"></i></span>
+                          <span>arXiv</span>
+                        </a>
+                      </div>
 
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2503.10781" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-            </div>
+                      <!-- Second row: Hugging Face -->
+                      <div class="buttons is-centered">
+                        <!-- HF: model -->
+                        <a href="https://huggingface.co/ekazakos/grove" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon is-small">🤗</span>
+                          <span>Config, Tokenizer, Checkpoint</span>
+                        </a>
+
+                        <!-- HF: HowToGround1M -->
+                        <a href="https://huggingface.co/datasets/ekazakos/HowToGround1M" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon is-small">🤗</span>
+                          <span>HowToGround1M</span>
+                        </a>
+
+                        <!-- HF: iGround -->
+                        <a href="https://huggingface.co/datasets/ekazakos/iGround" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon is-small">🤗</span>
+                          <span>iGround</span>
+                        </a>
+                      </div>
+                    </div>
           </div>
         </div>
       </div>
@@ -287,6 +292,13 @@
           <li><strong>80.1M bounding boxes</strong></li>
           <li>Suitable for pre-training</li>
         </ul>
+        <div class="has-text-centered mt-4">
+        <a href="https://huggingface.co/datasets/ekazakos/HowToGround1M" target="_blank"
+          class="button is-rounded is-dark is-medium">
+          <span class="icon is-small">🤗</span>
+          <span>Download HowToGround1M</span>
+        </a>
+      </div>
       </div>
 
       <!-- iGround -->
@@ -302,15 +314,22 @@
           <li>Train/val/test: <strong>2000/500/1000</strong></li>
           <li>Suitable for fine-tuning and evaluation</li>
         </ul>
+        <div class="has-text-centered mt-4">
+        <a href="https://huggingface.co/datasets/ekazakos/iGround" target="_blank"
+            class="button is-rounded is-dark is-medium">
+            <span class="icon is-small">🤗</span>
+            <span>Download iGround</span>
+          </a>  
+        </div>
       </div>
     </div>
 
-    <!-- Single centered button -->
+    <!-- Centered GitHub download button -->
     <div class="has-text-centered mt-6">
       <a href="https://github.com/ekazakos/grove?tab=readme-ov-file#data-preparation" target="_blank"
         class="button is-rounded is-dark is-medium">
-        <span class="icon"><i class="fas fa-download"></i></span>
-        <span>Download Datasets</span>
+        <span class="icon"><i class="fab fa-github"></i></span>
+        <span>Download All Datasets</span>
       </a>
     </div>
 
@@ -495,11 +514,12 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{kazakos2025grove,
-        title={Large-scale Pre-training for Grounded Video Caption Generation},
-        author={Evangelos Kazakos and Cordelia Schmid and Josef Sivic},
-        journal={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-        year={2025}}
+      <pre><code>@inproceedings{kazakos2025grove,
+    title     = {Large-scale Pre-training for Grounded Video Caption Generation},
+    author    = {Evangelos Kazakos and Cordelia Schmid and Josef Sivic},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    year      = {2025}
+}
       </code></pre>
     </div>
 </section>
